@@ -1,0 +1,455 @@
+*::after,
+*::before, 
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+body{
+   overflow-x: hidden;
+   height: 100vh;
+}
+
+/* ====== Modal  ======*/
+
+.modal-danger{
+   inset: 0;
+   position: fixed;
+   display: block;
+   margin: 0 auto;
+   padding: 10px;
+   width: 400px;
+   height: 80px;
+   border: 1px solid crimson;
+   background-color: brown;
+}
+
+.modal1-content{
+ text-align: center;
+ align-items: center;
+
+}
+.modal1-text{
+margin-top: 8px;
+}
+
+.modal-succes{
+   inset: 0;
+   display: block;
+   margin: 0 auto;
+   padding: 10px;
+   width: 400px;
+   height: 80px;
+   border: 1px solid rgb(5, 121, 14);
+   background-color: rgb(42, 165, 63);
+}
+
+.modal2-content{
+ text-align: center;
+ align-items: center;
+}
+.modal2-text{
+   margin-top: 8px;
+   }
+
+
+.header{
+   background-color: chocolate;
+   height: 110px;
+}
+
+.container{
+   max-width: 1440px;
+   width: 100%;
+   padding: 0 20px;
+   margin:  auto;
+}
+
+/* ======= Navbar start ======== */
+.navbar{
+   max-width: 1440px;
+  width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+
+}
+.menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 80%;
+   
+}
+
+.logo-img{
+   width: 50px;
+   height: 50px;
+}
+.logo{
+   position: relative;
+}
+
+.pizza{
+   position: absolute;
+   bottom: -30px;
+   left: -20px;
+   font-size: 36px;
+   letter-spacing: 3px;
+   color: rgb(37, 37, 37);
+}
+.navbar-list{
+   align-items: center;
+
+   display: flex;
+   gap: 30px;
+  
+   
+}
+
+
+.list-item{
+   list-style-type: none;
+   position: relative;
+}
+.list-item a{
+   position: relative;
+   top: 10px;
+   text-decoration: none; 
+   font-size: 18px;
+   font-weight: 550;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color: rgb(49, 48, 34);
+
+}
+
+
+.list-item a:hover{
+
+   color: rgb(204, 194, 51);
+
+}
+
+.list-item a:active{
+
+   color: rgb(204, 19, 19);
+
+}
+
+@media only screen and (max-width: 1040px) {
+   .logo-img{
+      width: 40px;
+      height: 40px;
+   }
+   .pizza{
+    
+      font-size: 30px;
+      letter-spacing: 2px;
+      color: rgb(37, 37, 37);
+   }
+   .list-item a{
+      position: relative;
+      top: 10px;
+      text-decoration: none; 
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: rgb(49, 48, 34);
+   
+   }
+   
+}
+
+@media only screen and (max-width: 756px){
+
+   .navbar-list{
+      display: none;
+    
+     
+      
+   }
+
+   
+} 
+@media only screen and (max-width: 686px) {
+   .logo-img{
+      width: 30px;
+      height: 30px;
+   }
+   .pizza{
+      position: absolute;
+      bottom: -15px;
+      left: -10px;
+      font-size: 26px;
+      letter-spacing: 2px;
+      color: rgb(37, 37, 37);
+   }
+  
+}
+
+/* ======== navbar end ====== */
+
+
+
+/* ========= main =========== */
+main{
+   padding-top: 50px;
+   background-color:bisque ;
+   padding-bottom: 50px;
+}
+
+.main-title{
+   display: block;
+   height: 50px;
+   padding: 7px;
+   margin: 0 auto;
+   max-width: 750px;
+   width: 100%;
+   
+   text-align: center;
+
+color: chocolate;
+background-color: black;
+
+}
+
+.leftside{
+   display: inline-block;
+   max-width: 800px;
+   width: 100%;
+}
+.selection{
+   margin-left: 10%;
+   max-width: 300px;
+   width: 100%;
+   margin-top: 20px;
+   padding: 5px;
+   color: chocolate;
+   background-color: black;
+}
+.lab{
+
+  
+   padding: 5px;
+   color: chocolate;
+background-color: black;
+}
+.choose{
+   border: none;
+
+   color: chocolate;
+   background-color: black;
+}
+.select-size{
+   margin-left: 10%;
+   width: 180px;
+   margin-top: 20px;
+   padding: 5px;
+   color: chocolate;
+   background-color: black;
+}
+
+
+.slc-buttons{
+   margin-top: 20px;
+   margin-left: 10%;
+   max-width: 450px;
+   width: 100%;
+}
+
+.btn1{
+   margin-right: 18px;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+
+
+
+.checkboxes{
+   display: flex;
+   max-width: 650px;
+   width: 100%;
+   margin-left: 10%;
+   margin-top: 20px;
+   padding: 10px;
+   color: chocolate;
+   background-color: black;
+} 
+
+
+.options-box{
+   max-width: 120px;
+   width: 100%;
+   display:inline-block;
+   margin: 15px;
+   
+
+  
+   /* width: 50px; */
+}
+
+.left-checks{
+   max-width: 250px;
+   width: 100%;
+   display: block;
+   /* width: 12; */
+   
+}
+
+.right-checks{
+   max-width: 275px;
+   width: 100%;
+}
+
+.last-checks{
+   max-width: 300px;
+   width: 100%;
+}
+
+
+
+.rightside{
+   display: inline-block;
+}
+.border{
+   display: inline-block;
+   margin-top: 30px;
+   width: 3px;
+   height: 500px;
+   background-color: black;
+}
+
+.right-wrap{
+   display: flex;
+}
+
+.div-wrap{
+   margin-top: 50px;
+   margin-left: 50px;
+}
+.order-btn{
+   margin-top: 20px;
+   padding: 8px;
+   background-color: black;
+   color: chocolate;
+}
+
+
+@media only screen and (max-width: 756px){
+
+   .main-title{
+  
+      max-width: 550px;
+      width: 100%;
+    
+   
+   color: chocolate;
+   background-color: black;
+  
+
+
+
+}
+.checkboxes{
+   display: block;
+   max-width: 500px;
+   width: 100%;
+} }
+
+@media only screen and (max-width: 686px){
+
+  
+
+
+
+
+.checkboxes{
+   margin: 0;
+   display: block;
+   max-width: 400px;
+   width: 100%;
+} 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========= footer =========== */
+footer{
+   background-color: rgb(19, 16, 34);
+}
+.footer{
+   
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+
+}
+.footer-logo{
+   color: rgb(175, 103, 8); 
+}
+.menu{
+   display: flex;
+
+   justify-content: space-around;
+   max-width: 1140px;
+   width: 100%;
+   
+}
+.footer-list{
+
+   display: flex;
+   gap: 30px;
+  
+   
+}
+
+.footer-item{
+   list-style-type: none;
+}
+.footer-link{
+   text-decoration: none; 
+   color: rgb(175, 103, 8);
+
+}
+
+
+@media only screen and (max-width: 684px){
+
+   
+   .menu{
+      display: block;
+   
+      justify-content: space-around;
+      max-width: 650px;
+      width: 100%;
+      
+   }
+
+   .footer-list{
+      margin: 0 auto;
+      display: block;
+      gap: 10px;
+     
+      
+   }
+   .footer-item{
+      text-align: center;
+   }
+
+}
+ 

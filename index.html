@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" /> -->
+  </head>
+
+  <body>
+
+    <!-- ==== Modal ==== -->
+    <!-- <div class="modal-danger">
+      <div class="modal1-content">
+        <h2 class="modal1-title">Amaliyotni bajarib bo'lmadi !</h2>
+        <h4 class="modal1-text">
+          Formalar to'liq to'ldirilganligiga e'tibor bering !
+        </h4>
+      </div>
+    </div> -->
+
+    <!-- <div class="modal-succes">
+      <div class="modal2-content">
+        <h2 class="modal2-title">Buyurtma qabul qilindi !</h2>
+        <h4 class="modal2-text">
+          30 daqiqada tekazib beramiz !
+        </h4>
+      </div>
+    </div> -->
+    <!-- ======= Navbar start ========== -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="menu">
+            <ul class="navbar-list">
+              <li class="list-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="list-item">
+                <a href="#">Preparing pizza</a>
+              </li>
+              <li class="list-item">
+                <a href="#">Booking</a>
+              </li>
+            </ul>
+            <div class="logo">
+              <div class="wrapper">
+                <img src="./images/img.png" alt="png" class="logo-img" />
+              </div>
+              <h1 class="pizza">Pizza</h1>
+            </div>
+            <ul class="navbar-list">
+              <li class="list-item">
+                <a href="tel: +998 90) 443-55-67">Click to call</a>
+              </li>
+              <li class="list-item">
+                <a href="mailto: manoken999@gmail.com ">E-mail</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ========== Navbar End ========= -->
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="wrapper">
+            <div class="main-title">
+              <h1>Pitsa buyurtma qilish</h1>
+            </div>
+            <div class="leftside">
+              <div class="selection">
+                <form class="form-select" action="#">
+                  <label class="lab" for="pizza"
+                    >Noni qanday bo'lsin?
+                    <select onchange="click();" class="choose" id="pizza" name="pizza">
+                      <option value="1">Yupqa</option>
+                      <option value="2">O'rtacha</option>
+                      <option value="3">Qalin</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+              <div class="size">
+                <p class="select-size">Kattaligini tanlang</p>
+  
+                <div class="slc-buttons">
+                  <button class="btn1">
+                    <strong>25sm</strong>
+                  </button>
+                  <button class="btn1">
+                    <strong>30sm</strong>
+                  </button>
+                  <button class="btn1">
+                    <strong>35sm</strong>
+                  </button>
+                </div>
+              </div>
+              <div class="ingredients">
+                <p class="select-size">
+                  Ustiga nima solaylik?
+                </p>
+                <div class="checkboxes">
+                  <div class="left-checks">
+                    <label for="left-ingredients">
+                      <input class="options-box" type="checkbox" id="extract1" value="pomidor"> Pomidor
+                      <input class="options-box" type="checkbox" id="extract2" value="Kurka"> Kurka go'shti
+                      <input class="options-box" type="checkbox" id="extract3" value="Zaytun"> Zaytun
+                      </label>
+                  </div>
+                  <div class="right-checks">
+                     <label for="right-ingredients"></label>
+                      <input class="options-box" type="checkbox" id="extract4" value="bodring"> Tuzlangan bodring
+                      <input class="options-box" type="checkbox" id="extract5" value="Qo'ziqorin"> Qo'ziqorin
+                      <input class="options-box" type="checkbox" id="extract6" value="Qazi"> Qazi
+                     </label>
+                  </div>
+                </div>
+              </div>
+              <div class="ingredients">
+                <p class="select-size">
+                  Qo'shimchalar
+                </p>
+                <div class="checkboxes">
+                  <div class="last-checks">
+                    <label for="left-ingredients">
+                      <input class="options-box" type="checkbox" id="extract7" value="Achchiq"> Achchiq
+                      <input class="options-box" type="checkbox" id="extract8" value="Sosiskali"> Sosiskali
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rightside">
+              <div class="right-wrap">
+                <div class="border"></div>
+                                        
+                <div class="div-wrap">
+                  <p id="non">Non:</p>
+                <div class="kattaligi"><p id="hajm">Kattaligi:</p></div>
+                <div class="ustida"><p id="usti">Ustida:</p></div>
+                <div class="qoshimcha"><p id="qoshimcha">Qo'shimcha:</p></div>
+                <button class="order-btn">
+                  Buyurtma berish
+                </button>
+                </div>
+               
+              </div>
+  
+            
+  
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========Footer Start ======== -->
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer-logo">
+            <strong>Pizza</strong>
+          </div>
+          <div class="menu">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a class="footer-link" href="#">Home</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#">Preparing pizza</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#">Booking</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="tel: +998 90) 443-55-67"
+                  >Tel: 90) 443-55-67</a
+                >
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="mailto: manoken999@gmail.com "
+                  >E-mail Addres</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
